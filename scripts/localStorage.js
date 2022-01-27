@@ -1,9 +1,13 @@
 import {displayBeginningBudget, updateCurrentExpensesOnDom, updateCurentBalanceOnDom} from "./creatingElements.js"
 
-let budgetStorage =[];
-let expensesAmount = [];
-let expensesType = [];
-let remainingBalance = [];
+let financesArr = [
+    {
+        initialBudget: [],
+        expensesAmount = [],
+        expensesType = [],
+        remainingBudget = []
+    }
+]
 
 //check local storage for best scores, set bestScoreArray
 function GetLocalStorage()
@@ -12,12 +16,9 @@ function GetLocalStorage()
     let localStorageData2 = localStorage.getItem('Budget');
     let localStorageData3 = localStorage.getItem('ExpensesType');
     let localStorageData4 = localStorage.getItem('FinalBalance');
-    if(localStorage.getItem('ExpensesAmount') || localStorage.getItem('Budget') || localStorage.getItem('ExpensesType') || localStorage.getItem('FinalBalance'))
+    if(localStorage.getItem('Finances'))
     {
-        expensesAmount = JSON.parse(localStorageData1);
-        budgetStorage = JSON.parse(localStorageData2);
-        expensesType = JSON.parse(localStorageData3);
-        remainingBalance = JSON.parse(localStorageData4);
+        financesArr = JSON.parse(localStorage)
     }
     else{
         saveToLocalStorage();
