@@ -1,0 +1,47 @@
+body{
+    font-family: 'Jost', sans-serif;
+    /* background-image: url("../images/v1008-23-c.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #c4ffe9;
+}
+
+.topContainer{
+    background-color:#fffbfb;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.headerTxt{
+    font-family: 'Fredoka One', cursive !important;
+    font-size: 2.5rem;
+}
+
+#confirmBudgetBtn{
+    background-color:rgb(179, 236, 239);
+}
+
+#subtractExpensesBtn{
+    background-color: pink;
+}
+
+.beginningBalanceTxt{
+    font-family: 'Fredoka One', cursive !important;
+    font-size: 1.5rem;
+}
+
+.red{
+    color: rgb(225, 100, 100);
+}
+
+.rowBg{
+    background-color:rgb(254, 255, 254);
+    padding: 5px;
+    margin-bottom: 2%;
+    border-radius: 15px;
+}
+
+p{
+    margin-bottom: 0px;
+}
